@@ -1,0 +1,71 @@
+html {
+  font-size: calc(10px + (14 - 10) * ((100vw - 400px) / (800 - 400)));
+}
+
+body {
+  font-family: sans-serif;
+  background: #e3e5f6;
+}
+
+.App {
+  width: 100vw;
+  height: 5000px;
+  background: #e3e5f6;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  width: 400px;
+  height: 400px;
+  flex-direction: column;
+}
+
+.item {
+  color: black;
+  width: 300px;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 10px;
+  text-align: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.list-group-item {
+  margin-top: 10px;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
